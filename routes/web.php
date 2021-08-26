@@ -20,9 +20,9 @@ Auth::routes();
 //home画面から飛べるページ
 Route::group(['middleware' => 'auth'],function(){
   Route::get('/Exam','ExamController@index');
-  Route::get('/Gamification','GamificationController@index');
-  Route::get('/Homework','HomeworkController@index');
-  Route::get('/BeforeQuestionnaire','BeforeQuestionnaireController@index');
+  Route::get('/Gamification','GamificationController@index')->name('Gamification');
+  Route::get('/Homework','HomeworkController@index')->name('Homework');
+  Route::get('/BeforeQuestionnaire','BeforeQuestionnaireController@index')->name('BeforeQuestionnaire');
   Route::get('/AfterQuestionnaire','AfterQuestionnaireController@index');
 });
 //問題のレベルを選択するページ
@@ -31,7 +31,7 @@ Route::group(['middleware' => 'auth'],function(){
   Route::get('/question/{ps}/{id}','HomeworkController@question')->name('question');
   Route::get('answer/{ps}/{id}/{ans}','HomeworkController@answer')->name('answer');
   Route::post('store','HomeworkController@store')->name('store');
-  
+
 });
 
 

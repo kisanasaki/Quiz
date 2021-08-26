@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class GamificationController extends Controller
 {
     public function index(){
+
       return view('Gamification');
     }
 }
