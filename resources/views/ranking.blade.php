@@ -15,10 +15,7 @@
       </li>
     </ul>
   </div>
-  <div class="card-body">
-    <h5 class="card-title">Name：{{ Auth::user()->name }}</h5>
-    <h5 class="card-title">Point：{{ Auth::user()->point }}</h5>
-  </div>
+</div>
 
   <div class="card-footer text-center">
     <a href="{{ url('home') }}" class="col-4 mt-3 btn btn-primary">戻る</a>

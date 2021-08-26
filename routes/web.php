@@ -51,6 +51,6 @@ Route::group(['prefix'=>'QuestionAdd','middleware'=> 'auth'],function(){
 });
 
 Route::post('/insertRanking', 'Web\RankingController@insertRanking');
-
+Route::get('/chart','PlaceController@index');
 
 Route::get('/home', 'HomeController@index')->name('home');
