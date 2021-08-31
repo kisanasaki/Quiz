@@ -9,6 +9,7 @@ class Homework extends Model
     /*--------------出題関連--------------*/
     //問題を一問ずつに分ける
     public static function getlevel($ps,$id){
+      
       $questions = Homework::where('level',$ps)
       ->where('id',$id)
       ->get();
