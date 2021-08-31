@@ -18,6 +18,7 @@
   </div>
   <div class="card-footer text-center">
     <a href="{{ route('question',[$ps,$id+1]) }}"　class="col-4 mt-3 btn btn-primary">次の問題へ</a>
+    <a href="{{ url('home') }}" class="col-4 mt-3 btn btn-primary">戻る</a>
   </div>
 </div>
 

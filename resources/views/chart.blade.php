@@ -22,7 +22,7 @@
              <a class="nav-link" href="{{ url('/chart')}}">グラフ</a>
            </li>
            <li class="nav-item">
-             <a class="nav-link" href="{{ url('/chart')}}">ランキング</a>
+             <a class="nav-link" href="{{ url('/ranking')}}">ランキング</a>
            </li>
          </ul>
        </div>
@@ -41,6 +41,7 @@
 
            make_chart(id,labels,data);
        </script>
+       <a href="{{ url('home') }}" class="col-4 mt-3 btn btn-primary">戻る</a>
    </body>
 
 </html>

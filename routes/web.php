@@ -30,7 +30,7 @@ Route::group(['middleware' => 'auth'],function(){
   Route::get('/select/{ps}','HomeworkController@select')->name('select');
   Route::get('/question/{ps}/{id}','HomeworkController@question')->name('question');
   Route::get('answer/{ps}/{id}/{ans}','HomeworkController@answer')->name('answer');
-  Route::post('store','HomeworkController@store')->name('store');
+
 
 });
 
@@ -52,5 +52,6 @@ Route::group(['prefix'=>'QuestionAdd','middleware'=> 'auth'],function(){
 
 Route::post('/insertRanking', 'Web\RankingController@insertRanking');
 Route::get('/chart','PlaceController@index');
+Route::get('/ranking','GamificationController@ranking');
 
 Route::get('/home', 'HomeController@index')->name('home');

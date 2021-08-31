@@ -11,13 +11,14 @@
         <a class="nav-link" href="{{ url('/chart')}}">グラフ</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{ url('/chart')}}">ランキング</a>
+        <a class="nav-link" href="{{ url('/ranking')}}">ランキング</a>
       </li>
     </ul>
   </div>
   <div class="card-body">
     <h5 class="card-title">Name：{{ Auth::user()->name }}</h5>
     <h5 class="card-title">Point：{{ Auth::user()->point }}</h5>
+
   </div>
 
   <div class="card-footer text-center">
